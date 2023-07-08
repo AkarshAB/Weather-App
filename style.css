@@ -1,0 +1,77 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+body {
+  background-color: rgb(201, 254, 254);
+  background-image: url('https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg?cs=srgb&dl=pexels-pixabay-158163.jpg&fm=jpg');
+  background: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.blur_main {
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px;
+}
+
+.weatherBox {
+  margin-top: 8rem;
+}
+
+/* h3 {
+  font-family: 'Belanosima', sans-serif;
+
+} */
+
+.searchButton {
+  margin-top: 0.11rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+.searchButtonDiv {
+  margin-left: -2.6rem;
+}
+
+#weatherDetailsLeft{
+  margin-top: 4rem;
+}
+.weatherDetails {
+  background-color: rgb(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px;
+}
+
+.displayDetails {
+  margin-top: 2rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+  body{
+    background-image: 150vh;
+  }
+  .blur_main{
+    flex-wrap:wrap-reverse;
+  }
+  .weatherBox {
+    margin-top: 1rem;
+    margin-left: -3rem;
+    /* border: 1px solid black; */
+  }
+
+  #temperature{
+    margin-left: -50px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+}

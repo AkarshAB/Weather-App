@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Bruno+Ace&family=Bruno+Ace+SC&family=Castoro+Titling&family=Dancing+Script&family=Kaisei+HarunoUmi&family=Kalam:wght@300&family=Mulish&family=Nanum+Myeongjo&family=Play&family=Poppins:wght@300&family=Vina+Sans&family=Zeyada&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container-sm">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10 d-flex rounded-2 text-center mt-5 justify-content-center blur_main pe-4">
+        <div class="col-6 text-center weatherBox">
+          <h3 class="ms-5 ps-3" id="weatherText">Weather</h3>
+          <div id="weatherDetailsLeft" class="text-light">
+            <h1 id="temperature" class="ms-5 ps-2"></h1>
+            <p id="feelsLike" class="ms-5 ps-3"></p>
+            <h3 id="locationName" class="ms-5 ps-3"></h3>
+            <h6 id="weatherType" class="ms-5 ps-3"></h6>
+            <h6 id="weatherDescription" class="ms-5 ps-3"></h6>
+          </div>
+        </div>
+
+
+        <div class="col-6 rounded-2 m-5">
+          <div class="d-flex justify-content-center">
+            <div class="col-10">
+              <input type="text" id="searchBox" class="rounded border-0 p-1 ps-2 form-control"
+                placeholder="Enter Location">
+            </div>
+            <div class="searchButtonDiv"><button type="submit" class="searchButton btn btn-light ms-1 rounded"
+                onclick="searchWeather()"><i class="fa-solid fa-magnifying-glass-location fa-lg"></i></button></div>
+          </div>
+
+          <div class="weatherDetails d-flex rounded mt-4">
+            <div class="col-3"></div>
+            <div class="col-6 text-center displayDetails">
+              <div class="">
+                <p>Country</p>
+                <p style="color: white;" id="country">&nbsp;</p>
+              </div>
+              <div>
+                <p>Humidity</p>
+                <p style="color: white;" id="humidity">&nbsp;</p>
+              </div>
+              <div>
+                <p>Wind</p>
+                <p style="color: white;" id="wind">&nbsp;</p>
+              </div>
+              <div class="mb-4">
+                <p>Pressure</p>
+                <p style="color: white;" id="pressure">&nbsp;</p>
+              </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+  
+</body>
+
+
+</html>
