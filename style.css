@@ -65,13 +65,39 @@ body {
     margin-left: -3rem;
     /* border: 1px solid black; */
   }
-
+  #searchBox{
+    margin-left: 4px;
+  }
+.weatherDetails{
+  margin-left: 10px;
+}
   #temperature{
     margin-left: -50px;
   }
   
 }
+@media only screen and (max-width: 400px) {
+  body{
+    background-image: 150vh;
+  }
+  .blur_main{
+    flex-wrap:wrap-reverse;
+  }
+  .weatherBox {
+    margin-top: 1rem;
+    margin-left: rem;
+    /* border: 1px solid black; */
+  }
+  #searchBox{
+    margin-left: 4px;
+  }
+.weatherDetails{
+  margin-left: -10px;
+  margin-right: -15px;
+}
 
-@media only screen and (max-width: 500px) {
-
+  #temperature{
+    margin-left: -50px;
+  }
+  
 }
