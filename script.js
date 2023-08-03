@@ -20,6 +20,7 @@ function weatherData(data){
   temp = data.main.temp;
   tempFeelsLike = data.main.feels_like;
   name = data.name;
+  image = `<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">`
 
   countryData = data.sys.country;
   pressureData = data.main.pressure;
@@ -52,6 +53,9 @@ function weatherData(data){
 
   htmlData4 = `${pressureData} Pa`
   pressure.innerHTML = htmlData4;
+
+  htmlData10 = image
+  weatherDetailsImg.innerHTML = htmlData10;
 
 
 }

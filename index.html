@@ -16,9 +16,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Bruno+Ace&family=Bruno+Ace+SC&family=Castoro+Titling&family=Dancing+Script&family=Kaisei+HarunoUmi&family=Kalam:wght@300&family=Mulish&family=Nanum+Myeongjo&family=Play&family=Poppins:wght@300&family=Vina+Sans&family=Zeyada&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belanosima&family=Bruno+Ace&family=Bruno+Ace+SC&family=Castoro+Titling&family=Dancing+Script&family=Kaisei+HarunoUmi&family=Kalam:wght@300&family=Mulish&family=Nanum+Myeongjo&family=Play&family=Poppins:wght@300&family=Vina+Sans&family=Zeyada&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -31,6 +33,7 @@
         <div class="col-6 text-center weatherBox">
           <h3 class="ms-5 ps-3" id="weatherText">Weather</h3>
           <div id="weatherDetailsLeft" class="text-light">
+            <div id="weatherDetailsImg" class="ms-5 ps-2"></div>
             <h1 id="temperature" class="ms-5 ps-2"></h1>
             <p id="feelsLike" class="ms-5 ps-3"></p>
             <h3 id="locationName" class="ms-5 ps-3"></h3>
@@ -43,7 +46,7 @@
         <div class="col-6 rounded-2 m-5">
           <div class="d-flex justify-content-center">
             <div class="col-10">
-              <input type="text" id="searchBox" class="rounded border-0 p-1 ps-2 form-control"
+              <input type="search" id="searchBox" class="rounded border-0 p-1 ps-2 form-control"
                 placeholder="Enter Location">
             </div>
             <div class="searchButtonDiv"><button type="submit" class="searchButton btn btn-light ms-1 rounded"
@@ -81,7 +84,7 @@
 
   <script src="./script.js"></script>
 
-  
+
 </body>
 
 
